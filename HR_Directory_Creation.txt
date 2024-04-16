@@ -1,0 +1,31 @@
+For this in-class assignment you have been requested to work with the Tennessee Tech employee directory API to build out a shared folder infrastructure for the Human Resources department to use to store employee records in.  The server you are working on (in your case a new GCP server) is only accessible to individuals in the office and is sequestered from all other access.  
+
+You will be using the web service that is referenced in this repository.  Users of the script will have the ability to interactively choose to search by name or department.  However, the actual name or department criteria should be passed into the script as a parameter.  HR would like to be able to perform this process for multiple names or departments in a single run of the script.  A single ‘employee records’ folder will hold all employee records/folders.
+
+Against the advice of IT, the HR department has requested that each file should be able to be accessed by anyone that has network connectivity to the server.  Additionally, HR has requested that you create a file within the directory for each person returned from the web service request.  For example, if the employee has the name Benjamin Burchfield, you will create a directory named BenjaminBurchfield without spaces and using an uppercase letter for the first letter of the first and last name.
+
+HR would like to prepopulate the files with the employees name, department, and position.  Below is an example of how they would like for that information to be shown:
+
+Name:  Benjamin Burchfield
+Dept: Computer Science
+Position: Lecturer
+
+Please note that individuals may be returned with multiple entries in the JSON due to having multiple positions on campus.  In this case the HR department still only wish to have one file and that file to look similar to below:
+
+Name: Kacee Abbott
+Dept: Business Office
+Position: Controller
+
+Dept: College of Business
+Position: Adjunct Faculty
+
+
+This assigment is designed to use many of the skills that you have gathered in this term including:
+Using Git
+Creating shell scripts that:
+Work with parameters
+Work with prompts
+Performs file/directory creation
+File permission modification
+
+This is a challenging assignment but is similar to work that we have done previously in the class.  When complete you should be able to test your script.  Make sure you comment your code.  This assignment must be worked on in class and you will be submitting your work at the end of the class period.  Additional instructions will be provided in the classroom.
